@@ -4,6 +4,7 @@
  {
     font-family : 'Roboto', sans-serif;        
  }
+
 .header__logo{
     color: black;
     margin: 0;
@@ -14,6 +15,7 @@
     font-weight: bold;
     font-family: "Shrikhand", "cursive";
 }
+
 .header{
     padding: 1rem 1rem;
     box-shadow: 0 0 0.5rem rgba(0,0,0,0.25);
@@ -49,24 +51,27 @@
     background-color: #f3f3f3;
     height: 66px;
     font-size: 1.2rem;
-    margin: 0 -1% 0 -1%;
-    
+    margin: 0 -1% 0 -1%;    
 }
+
 .localisation__text{
     font-weight: 700;
     display:flex;
     margin-left: 1%;
 
 }
+
 .localisation i{
     display: flex;
 }
+
 .recherche{
     text-align: center;
     background-color: rgb(250, 250, 250);
     padding-top: 1%;
     height: 12rem;
 }
+
 .recherche__button{
    text-decoration: none;
    color:rgb(255, 255, 255);
@@ -75,48 +80,56 @@
    background-image: linear-gradient(0deg, rgba(144, 79, 223, 0.9), rgba(255,121,218,0.9));
    border-radius: 6rem;
 }
+
 .recherche__button:hover{
     box-shadow: 0.25rem 0.25rem 10px rgba(0,0,0,0.5);
 }
+
 .soustitre{
    padding-bottom: 1.2rem;
    font-weight: 320;
 }
-.sectionfontionnement{
+
+.sectionfontionnement,.flex{
     max-width: 1280px;
     margin: auto;
     position: relative;
 }
+
 .fonctionnement__liste{
     display: flex;
     justify-content: space-between;
     padding: 0.8rem;
 }
+
 .fonctionnement__liste__fon {
     display: flex;
-    background-color: #f3f3f3;;
+    background-color: #f3f3f3;
     width: 23rem;
     height: 3.5rem;
     border-radius: 1.25rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.125);
 }
-.fonctionnement__liste__fon__icon{
-   
-    color: grey;
+
+.fonctionnement__liste__fon__icon{   
+    color: #808080;
     padding-left: 1.8rem;
     padding-top: 1.3rem;
 }
+
 .fonctionnement__liste__fon .text{
     padding-top: 1.2rem;
     margin-left: 1rem;
-} 
+}
+
 .fonctionnement__liste__fon:hover{
     background-color: #e4d4f6;
-
 }
+
 .sectionfontionnement {
   counter-reset: count;
 }
+
 .fonctionnement__liste__fon::before {
     counter-increment: count 1;
     content: counter(count) " ";
@@ -124,13 +137,89 @@
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 6.25rem;
-    color: white;   
+    color: #fff;   
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.1rem;
-    
-    margin-left: -0.65rem;
-    
+    margin-top: 1.1rem;    
+    margin-left: -0.65rem;    
 }
+
+.restau{
+ background-color: #f3f3f3;
+ height: 50rem;
+}
+
+.restaurants__titre{
+  padding-top: 4rem;
+}
+.restaurants__liste__image {
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    height: 12rem;
+    width: 39rem;
+    margin-top: 1rem;
+    box-shadow: none;    
+}
+
+.restaurants__liste__footer{   
+   padding: 1rem;
+   justify-content: space-between;
+   background-color: #fff;
+   margin-top: -0.3rem;
+   width: 37rem;
+   display: flex;
+   align-items: center;
+   border-radius: 0 0 1rem 1rem;  
+   height: 3.5rem;
+   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.125);
+}
+
+.restaurants__global{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}  
+
+.boite {
+      position: relative;
+      }
+
+.legende {
+      position: absolute;
+      padding: 0.5rem;
+      bottom: 15rem;
+      left: 33rem;
+      background-color: #99e2d0;
+      color: #1b6150;
+      opacity: 0;
+      -webkit-transition: opacity .5s ease;
+      transition: opacity .5s ease;
+      }
+
+.boite:hover .legende {
+      opacity:2;
+      } 
+
+.restaurants__liste__coeur{
+     transition: all 0.5s;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.08rem;
+    background: -webkit-linear-gradient(top right, #9356dc 30%, #ff79da 70%);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-size: 100% 0;
+    background-position: 100% 100%;
+    font-weight: bold;
+
+}
+.restaurants__liste__coeur:hover {
+    background-size: 100% 100%;
+    -webkit-text-stroke-color: transparent;
+    }
+.boite a{
+  text-decoration: none;
+  color: black;
+}
+
 
