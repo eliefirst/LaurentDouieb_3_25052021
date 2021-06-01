@@ -147,7 +147,8 @@
 
 .restau{
  background-color: #f3f3f3;
- height: 50rem;
+ height: 48rem;
+ /*margin-left: -0.50rem;*/
 }
 
 .restaurants__titre{
@@ -216,10 +217,36 @@
 .restaurants__liste__coeur:hover {
     background-size: 100% 100%;
     -webkit-text-stroke-color: transparent;
-    }
+}
 .boite a{
   text-decoration: none;
   color: black;
 }
-
+.footer{
+    background-color: #353535;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1rem;
+}
+.footer__logo{
+    color: white;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+   font-size: 1.2rem;
+}
+.footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+.footer__liste {
+    list-style: none;
+}
+.footer__icon{
+    margin-left: -2.8rem;
+    margin-right: 0.8rem;
+}
 
