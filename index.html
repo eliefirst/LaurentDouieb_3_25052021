@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/5337207aaf.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" media="only screen and (min-width: 360px) and (max-width: 413px)" href="./css/style-medium.css">
         <title>Accueil - ohmyfood</title><meta name="title" content="Accueil - ohmyfood">
     </head>
 
@@ -23,10 +24,10 @@
             <main class="main">
 
                 <section class="localisation">
-
-                  <i class="fa-map-marker-alt fas localisation__icon"></i> 
-                  <h4 class="localisation__text">Paris, Belleville</h4> 
-
+                  <div class="backgroundloc">
+                    <i class="fa-map-marker-alt fas localisation__icon"></i> 
+                    <h4 class="localisation__text">Paris, Belleville</h4> 
+                  </div>
                 </section> 
 
              
@@ -38,26 +39,27 @@
                   <a href="#restaurants" class="recherche__button"> Explorer nos restaurants </a>
 
                </section>
+               <h2 class="fonctionnement">Fonctionnement</h2>
 
                <section class="sectionfontionnement">
-                   <h2 class="fonctionnement">Fonctionnement</h2>
-                   <ol class="fonctionnement__liste"> 
+                   
+                   <div class="fonctionnement__liste"> 
 
-                      <li class="fonctionnement__liste__fon"> 
+                      <div class="fonctionnement__liste__fon"> 
                         <i class="fa-mobile-alt fas fonctionnement__liste__fon__icon"></i> 
                         <span class="text">Choisissez un restaurant</span> 
-                      </li> 
+                      </div> 
 
-                      <li class="fonctionnement__liste__fon"> 
+                      <div class="fonctionnement__liste__fon"> 
                         <i class="fa-list-ul fas fonctionnement__liste__fon__icon"></i> 
                         <span class="text">Composez votre menu</span> 
-                      </li> 
+                      </div> 
 
-                      <li class="fonctionnement__liste__fon"> 
+                      <div class="fonctionnement__liste__fon"> 
                         <i class="fa-store fas fonctionnement__liste__fon__icon"></i> 
                         <span class="text">Dégustez au restaurant</span> 
-                      </li>  
-                   </ol> 
+                      </div>  
+                    </div> 
                </section>
 
                <section class="restau" id="restau">

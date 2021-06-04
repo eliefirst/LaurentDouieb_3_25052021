@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
- *
- {
+ * {
     font-family : 'Roboto', sans-serif;        
  }
 
@@ -18,58 +17,46 @@
 
 .header{
     padding: 1rem 1rem;
-    box-shadow: 0 0 0.5rem rgba(0,0,0,0.25);
     position: relative;
     margin: -1% -1% 0 -1%;
+    
 }
-/*img{
-    width:12%;
-} 
-
-@media all and (min-width: 375px) and (max-width: 413px){
-    img{
-
-    width:44%;
-    }
-}
+ 
 @media all and (min-width: 414px) and (max-width: 767px){
-    img{
+    .header{
+        margin: -2% -2% auto -2%;
+       }
 
-    width:40%;
-    }
-}
+    
+}/*
 @media all and (min-width: 768px) and (max-width: 1280px){
     img{
 
     width:24%;
     }
 }*/
-.localisation{
+.backgroundloc{
     display: flex;
     justify-content:center;
     align-items:center;
-    background-color: #f3f3f3;
-    height: 66px;
     font-size: 1.2rem;
-    margin: 0 -1% 0 -1%;    
+    margin: 0 -0.5% 0 -0.5%;
+    background: -moz-linear-gradient(bottom, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
+    background: -webkit-linear-gradient(top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
+    background: linear-gradient(to top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
 }
 
+
 .localisation__text{
-    font-weight: 700;
-    display:flex;
     margin-left: 1%;
 
 }
-
-.localisation i{
-    display: flex;
-}
-
 .recherche{
     text-align: center;
     background-color: rgb(250, 250, 250);
     padding-top: 1%;
     height: 12rem;
+    margin: 0 -0.5% 0 -0.5%;
 }
 
 .recherche__button{
@@ -90,30 +77,32 @@
    font-weight: 300;
 }
 
-.sectionfontionnement,.flex{
+.sectionfontionnement,.fonctionnement,.flex{
     max-width: 1280px;
     margin: auto;
     position: relative;
+    padding-bottom: 1rem;
+    margin-top: 2.5rem;
 }
 
 .fonctionnement__liste{
     display: flex;
     justify-content: space-between;
     padding: 0.8rem;
+    width: 100%;
 }
 
 .fonctionnement__liste__fon {
     display: flex;
     background-color: #f3f3f3;
-    width: 23rem;
+    width: 20rem;
     height: 3.5rem;
     border-radius: 1.25rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.125);
 }
-
 .fonctionnement__liste__fon__icon{   
     color: #808080;
-    padding-left: 1.8rem;
+    padding-left: 1.5rem;
     padding-top: 1.3rem;
 }
 
@@ -148,7 +137,7 @@
 .restau{
  background-color: #f3f3f3;
  height: 48rem;
- /*margin-left: -0.50rem;*/
+ margin: 0 -0.5% 0 -0.5%;
 }
 
 .restaurants__titre{
@@ -160,7 +149,8 @@
     height: 12rem;
     width: 39rem;
     margin-top: 1rem;
-    box-shadow: none;    
+    box-shadow: none; 
+       
 }
 
 .restaurants__liste__footer{   
@@ -189,11 +179,11 @@
 .legende {
       position: absolute;
       padding: 0.5rem;
-      bottom: 15rem;
+      bottom: 14rem;
       left: 33rem;
       background-color: #99e2d0;
       color: #1b6150;
-      opacity: 0;
+     /*opacity: 0;*/
       -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease;
       }
@@ -227,6 +217,7 @@
     text-align: center;
     line-height: 2rem;
     padding: 1rem;
+    margin: 0 -0.5% 0 -0.5%;
 }
 .footer__logo{
     color: white;

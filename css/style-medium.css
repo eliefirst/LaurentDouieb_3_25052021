@@ -1,0 +1,52 @@
+body{
+    width:101%;
+    margin:auto;
+}
+.localisation__text{
+    margin-left: 4%;
+}
+.fonctionnement__liste{
+    flex-direction: column;
+    width: 88%;
+    margin-top: -10%;
+    margin-left: 2%;
+}
+.fonctionnement__liste__fon{
+   margin-bottom: 1.3rem;
+   margin-left: 4%;
+   width: 92%;
+}
+.titre{
+    width: 79%;
+    margin-left: 10%;
+}
+.recherche{
+   height: 16rem;
+   
+}
+.fonctionnement{
+    width: 94%;
+    margin-right: 0%;
+}
+.restaurants__titre {
+    padding-top: 2rem;
+    margin-left: 7%;
+}
+.restau {
+    width: 100%;
+    height: 82rem;
+    margin: 0 -0.5% 0 -0.5%;
+}
+.restaurants__liste__image {
+    width: 19rem;
+    margin-left: 10%;
+}
+.restaurants__liste__footer{
+    width: 17rem;
+    margin-left: 10%;    
+}
+.legende {
+    bottom: 14rem;
+    left: 15rem;
+    padding: 0.3rem;
+}
