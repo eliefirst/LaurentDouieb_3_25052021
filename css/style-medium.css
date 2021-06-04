@@ -20,10 +20,12 @@ body{
     width: 79%;
     margin-left: 10%;
 }
-.recherche{
-   height: 16rem;
-   
+.soustitre {
+    margin-left: 1rem;
 }
+.recherche{
+    height: 16rem;   
+ }
 .fonctionnement{
     width: 94%;
     margin-right: 0%;
@@ -38,15 +40,27 @@ body{
     margin: 0 -0.5% 0 -0.5%;
 }
 .restaurants__liste__image {
-    width: 19rem;
-    margin-left: 10%;
+    width: 20rem;
+    margin-left: 7%;
 }
 .restaurants__liste__footer{
-    width: 17rem;
-    margin-left: 10%;    
+    width: 18rem;
+    margin-left: 7%;    
 }
 .legende {
     bottom: 14rem;
     left: 15rem;
     padding: 0.3rem;
+}
+.footer__icon{
+    margin-left: -2rem;
+}
+.footer__liste__item__base{
+    margin-left: -2rem;
+}
+.footer__logo {
+	margin-left: 0.5rem;
+}
+.footer {
+    text-align: left;
 }

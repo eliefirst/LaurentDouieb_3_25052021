@@ -91,6 +91,10 @@
     padding: 0.8rem;
     width: 100%;
 }
+h2.visibility
+{
+  visibility:hidden;
+}
 
 .fonctionnement__liste__fon {
     display: flex;
