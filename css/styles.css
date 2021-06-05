@@ -3,6 +3,10 @@
  * {
     font-family : 'Roboto', sans-serif;        
  }
+ body{
+     width: auto;
+     margin: auto;
+ }
 
 .header__logo{
     color: black;
@@ -18,11 +22,21 @@
 .header{
     padding: 1rem 1rem;
     position: relative;
-    margin: -1% -1% 0 -1%;
+    
     
 }
+.header__arrowleft{
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    transform: translateY(-28%);
+    font-size: 1.2rem;
+    color: black;
+}
  
-@media all and (min-width: 414px) and (max-width: 767px){
+/*@media all and (min-width: 414px) and (max-width: 767px){
     .header{
         margin: -2% -2% auto -2%;
        }
@@ -31,7 +45,6 @@
 }/*
 @media all and (min-width: 768px) and (max-width: 1280px){
     img{
-
     width:24%;
     }
 }*/
@@ -156,6 +169,12 @@ h2.visibility
     box-shadow: none; 
        
 }
+.restaurants__imgmenu{
+    max-width: 100%;
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
 
 .restaurants__liste__footer{   
    padding: 1rem;
@@ -244,4 +263,3 @@ h2.visibility
     margin-left: -2.8rem;
     margin-right: 0.8rem;
 }
-
