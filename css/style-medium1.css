@@ -34,6 +34,10 @@ body{
 .restaurants__titre {
     padding-top: 2rem;
     margin-left: 7%;
+    width: 90%;
+}
+.flex{
+    margin-top: -3.5rem;
 }
 .restau {
     width: 100%;
@@ -41,16 +45,16 @@ body{
     margin: 0 -0.5% 0 -0.5%;
 }
 .restaurants__liste__image {
-    width: 20rem;
+    width: 22.9rem;
     margin-left: 7%;
 }
 .restaurants__liste__footer{
-    width: 18rem;
+    width: 20.9rem;
     margin-left: 7%;    
 }
 .legende {
     bottom: 15rem;
-    left: 16rem;
+    left: 19rem;
     padding: 0.3rem;
 }
 .footer__icon{
