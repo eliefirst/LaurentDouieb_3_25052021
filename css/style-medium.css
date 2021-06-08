@@ -64,3 +64,22 @@ body{
 .footer {
     text-align: left;
 }
+/*pages restaurant*/
+.restaurants__liste__menu{
+    width:96%;
+    margin-left: 0;
+}
+.global {
+    display: flex;
+    margin-left: 0rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.order {
+	background-color: #f3f3f3;
+	margin: auto; 	
+}
+.recherche__button {
+	margin-left:-0.8rem;
+	
+}
