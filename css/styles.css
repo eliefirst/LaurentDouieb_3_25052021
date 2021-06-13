@@ -76,7 +76,7 @@
 }
 
 .sectionfontionnement,.fonctionnement,.flex{
-    max-width: 1280px;
+    max-width: 80rem;
     margin: auto;
     position: relative;
     padding-bottom: 1rem;
@@ -178,6 +178,7 @@ h2.visibility
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }  
 
 .boite {
@@ -299,15 +300,11 @@ h2.visibility
     background-color: #99e2d0;
     margin-top: -1rem
 }
-/*.menu::after{
-    content: "";
-    width: 3rem;
-    height: 0.25rem;
-    background-color: #99e2d0;
-    position: absolute;
-    margin-top: 1.5rem;
-    margin-left: -5rem;
-}*/
+@keyframe choixAp {
+    0% {opacity:0;}
+    99% {opacity:0;}
+    100% {opacity:1;}
+    }
 .choix{
     width:95%;
     display: flex;
@@ -322,22 +319,25 @@ h2.visibility
     -webkit-border-radius: 0.82rem;
     -webkit-box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
     box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
+ 	position: relative;
+	animation: choixAp 3s 1;
 }
 .choix__titre{
-   margin-top:0.7rem;
-   width: 90%;
-   padding-right: 0.625rem;
+   width: 75%;
+   height: 4.5rem;
 }
-.choix__soustitre{
-    margin-top:-0.250rem;
-    width: 61%;
+
+.choix__titre p{   
+    margin-top: -1rem;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;    
+    white-space: nowrap;
+          
 }
-.prix{
-    margin-top:-0.375rem;
+.choix__prix p{
+    margin-top:2.5rem;
     font-weight: bold;
+    margin-left: -1.5rem;
 }
 
 .commander{
@@ -360,16 +360,15 @@ h2.visibility
     justify-content: center;
     width: 0;
     transition: 0.5s;
-    margin-top: -3.4rem;
+    height: 4.5rem;    
     border-radius: 0rem 0.82rem 0.82rem 0rem;
-    margin-right: -0.188rem;
+    margin-right: -1.2rem;
+
 }
 .choix__confirmation:hover{
     width: 5rem;
-    justify-content: center;
-    margin-top: -3.188rem;
-    margin-bottom: 0.6rem;
-    margin-right: -0.6rem;
+    margin-right: -0.180rem;
+ 
 }
 .dish__icon {
     color: #99e2d0;
@@ -380,11 +379,13 @@ h2.visibility
     align-items: center;
     justify-content: center;
     border-radius: 6.25rem;
+    opacity: 0%;
+    margin-left:-0.625;
 }
 .choix__confirmation:hover .dish__icon{
     transform: rotate(360deg);
     margin-left: 0rem;
-    transition: 0.5s;
+    transition: 0.5s;opacity: 100%;
     
 }
 
