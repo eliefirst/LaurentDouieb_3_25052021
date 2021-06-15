@@ -7,15 +7,10 @@
      width: auto;
      margin: auto;
  }
-  /*loading*/
- /*body {
-    margin: 0;
-    padding: 1rem;
-  }*/
-
+ 
   .loadingspinner{
     transition-property: all;
-    transition-duration: 500ms; 
+    transition-duration: 300ms; 
     transition-timing-function: ease-in;
     transition-delay: 1s;  
   }
@@ -65,9 +60,7 @@
       transform: translateX(calc(var(--sz) * -1 - calc(var(--hm) / 4)));
     }
   }
-  
-  
- 
+   
 
 
 .header__logo{
@@ -108,7 +101,6 @@
     background: -webkit-linear-gradient(top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
     background: linear-gradient(to top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
 }
-
 
 .localisation__text{
     margin-left: 1%;
@@ -239,8 +231,7 @@ h2.visibility
 .restaurants__global{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-between;  
 }  
 
 .boite {
@@ -254,7 +245,6 @@ h2.visibility
       left: 33rem;
       background-color: #99e2d0;
       color: #1b6150;
-     /*opacity: 0;*/
       -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease;
       }
@@ -366,12 +356,12 @@ h2.visibility
 
 .choix{
     width:95%;
+    height: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: white;
-    height: 4.5rem;
-    margin-top: 2rem;
+    background: white;    
+    margin-top: 2rem;    
     margin-bottom: 1rem;
     border-radius: 0.82rem;
     -moz-border-radius: 0.82rem;
@@ -380,6 +370,10 @@ h2.visibility
     box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
  	
 }
+.choix__titre{
+    width: 85%;
+    transition: .5s linear;
+ }
 .choix {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
@@ -416,24 +410,36 @@ h2.visibility
  
   
 .choix__titre{
-   width: 75%;
-   height: 4.5rem;
+   width: 85%;
+   transition: .5s linear;
    
 }
 
 .choix__titre p{   
-    margin-top: -1rem;
+    
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    
-          
+    margin: -4% 0 0 4%;          
 }
-.choix__prix p{
-    margin-top:2.5rem;
+.choix__titre h4{
+     margin-left: 4%;
+ }
+
+.choix__soustitre{
+    margin-top:-0.250rem;
+    width: 61%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;   
+}
+.choix__prix{
+    width: 10%;
+    margin-top: auto;
     font-weight: bold;
-    margin-left: -1.5rem;
+    
 }
+
 
 .commander{
     display: flex;
@@ -449,21 +455,12 @@ h2.visibility
 
 }
 .choix__confirmation{
+    width : 0%;
     background-color: #99e2d0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 0;
-    transition: 0.5s;
-    height: 4.5rem;    
-    border-radius: 0rem 0.82rem 0.82rem 0rem;
-    margin-right: -1.2rem;
-
-}
-.choix__confirmation:hover{
-    width: 5rem;
-    margin-right: -0.180rem;
- 
+    transition: .5s linear;
 }
 .dish__icon {
     color: #99e2d0;
@@ -475,15 +472,25 @@ h2.visibility
     justify-content: center;
     border-radius: 6.25rem;
     opacity: 0%;
-    margin-left:-0.625;
+    transition: .5s linear;
 }
-.choix__confirmation:hover .dish__icon{
+
+.choix:hover .choix__titre{
+    width : 70%;
+}
+
+.choix:hover .choix__confirmation{
+    border-radius: 0rem 0.82rem 0.82rem 0rem;
+    margin-right: -0.188rem;
+    width : 20%;
+}
+
+.choix:hover .dish__icon{
     transform: rotate(360deg);
     margin-left: 0rem;
-    transition: 0.5s;opacity: 100%;
-    
+    opacity: 100%; /* PSCHANGE : pour le problème de la coche */
 }
+
 #content{
     display: none;
 }
-
