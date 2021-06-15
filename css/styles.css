@@ -7,6 +7,68 @@
      width: auto;
      margin: auto;
  }
+  /*loading*/
+ /*body {
+    margin: 0;
+    padding: 1rem;
+  }*/
+
+  .loadingspinner{
+    transition-property: all;
+    transition-duration: 500ms; 
+    transition-timing-function: ease-in;
+    transition-delay: 1s;  
+  }
+  
+  .loadingspinner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .block {
+    --sz: 8vmin;
+    --tX: 0;
+    --animation: 700ms cubic-bezier(0.3, 0.5, 0.4, 0.9) infinite alternate-reverse;
+    --hm: 4.5vmin;
+    height: var(--sz);
+    width: var(--sz);
+    background-image: var(--bg);
+    border-radius: 50%;
+    transform: translateX(var(--tX));
+    mix-blend-mode: lighten;
+  }
+  
+  .primaire {
+    --bg: linear-gradient(-50deg, #d1c3e2 0%, #9356DC 100%);
+    margin-right: var(--hm);
+    animation: attract-primaire var(--animation);
+    
+  }
+  .secondaire{
+    --bg: linear-gradient(-50deg, #f3cbe8 0%, #FF79DA 100%);
+    margin-right: var(--hm);
+    animation: attract-secondaire var(--animation);
+
+  }   
+  
+  @keyframes attract-primaire {
+    to {
+      transform: translateX(calc(var(--sz) + calc(var(--hm) / 4)));
+    }
+  }
+  
+  @keyframes attract-secondaire {
+    to {
+      transform: translateX(calc(var(--sz) * -1 - calc(var(--hm) / 4)));
+    }
+  }
+  
+  
+ 
+
 
 .header__logo{
     color: black;
@@ -264,6 +326,7 @@ h2.visibility
     display: flex;
     margin-left: 9.5rem;
     width: 81rem;
+    
 }
 .restaurants__liste__menu{
     display: flex;
@@ -300,11 +363,7 @@ h2.visibility
     background-color: #99e2d0;
     margin-top: -1rem
 }
-@keyframe choixAp {
-    0% {opacity:0;}
-    99% {opacity:0;}
-    100% {opacity:1;}
-    }
+
 .choix{
     width:95%;
     display: flex;
@@ -319,12 +378,47 @@ h2.visibility
     -webkit-border-radius: 0.82rem;
     -webkit-box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
     box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
- 	position: relative;
-	animation: choixAp 3s 1;
+ 	
 }
+.choix {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+  
+ 
+  
 .choix__titre{
    width: 75%;
    height: 4.5rem;
+   
 }
 
 .choix__titre p{   
@@ -332,6 +426,7 @@ h2.visibility
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    
           
 }
 .choix__prix p{
@@ -387,5 +482,8 @@ h2.visibility
     margin-left: 0rem;
     transition: 0.5s;opacity: 100%;
     
+}
+#content{
+    display: none;
 }
 

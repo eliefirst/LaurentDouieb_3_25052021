@@ -10,11 +10,30 @@
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" media="only screen and (min-width: 360px) and (max-width: 413px)" href="./css/style-medium.css">
         <link rel="stylesheet" media="only screen and (min-width: 414px) and (max-width: 666px)" href="./css/style-medium1.css">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $(".loadingspinner").fadeOut(5000,function(){
+                $("#content").fadeIn(1000);
+            });
+            })
+
+
+
+        </script>
+
         <title>Accueil - ohmyfood</title><meta name="title" content="Accueil - ohmyfood">
     </head>
+    
 
     <body> 
-          
+            <div class="loadingspinner">        
+            <div class="block primaire"></div>
+            <div class="block secondaire"></div>       
+            </div>
+      <div id=content>
             <header class="header">
              
              
@@ -170,9 +189,9 @@
                </section>
 
             </main>
-       <footer class="footer"> 
+          <footer class="footer"> 
 
-            <div class="footer-wrap">
+              <div class="footer-wrap">
 
                     <span class="footer__logo">ohmyfood</span>
 
@@ -193,8 +212,8 @@
 
             </div>
 
-        </footer> 
-        
+          </footer> 
+      </div>  
     </body>
 
 </html>
