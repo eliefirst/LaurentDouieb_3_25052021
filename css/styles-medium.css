@@ -1,7 +1,12 @@
+
 /*--------------\*
-only screen and (min-width: 414px) and (max-width: 666px)" href="./css/styles-small.css">
+only screen and (min-width: 668px) and (max-width: 740px)" href="./css/styles-medium.css">
 /*--------------*/
 
+body{
+    width:101%;
+    margin:auto;
+}
 .localisation__text{
     margin-left: 4%;
 }
@@ -45,7 +50,7 @@ only screen and (min-width: 414px) and (max-width: 666px)" href="./css/styles-sm
     margin: 0 -0.5% 0 -0.5%;
 }
 .restaurants__liste__image {
-    /*width: 22.9rem;*/
+    width: 22.9rem;
     margin-left: 7%;
 }
 .restaurants__liste__footer{
@@ -71,11 +76,8 @@ only screen and (min-width: 414px) and (max-width: 666px)" href="./css/styles-sm
 }
 /*pages restaurant*/
 .restaurants__liste__menu{
-    width:98%;
+    width:96%;
     margin-left: 0;
-    margin-top: -10%;
-    
-
 }
 .global {
     display: flex;

@@ -1,7 +1,8 @@
-body{
-    width:101%;
-    margin:auto;
-}
+/*--------------\*
+only screen and (min-width: 360px) and (max-width: 413px)
+/*--------------*/
+
+
 .localisation__text{
     margin-left: 4%;
 }
@@ -41,12 +42,12 @@ body{
     margin: 0 -0.5% 0 -0.5%;
 }
 .restaurants__liste__image {
-    width: 20rem;
-    margin-left: 7%;
+    /*width: 20rem;*/
+    margin-left: 9%;
 }
 .restaurants__liste__footer{
     width: 18rem;
-    margin-left: 7%;    
+    margin-left: 9%;    
 }
 .legende {
     bottom: 15rem;
@@ -67,8 +68,9 @@ body{
 }
 /*pages restaurant*/
 .restaurants__liste__menu{
-    width:96%;
+    width:98%;
     margin-left: 0;
+    margin-top: -15%;
 }
 .global {
     display: flex;

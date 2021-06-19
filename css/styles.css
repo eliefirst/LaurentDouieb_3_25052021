@@ -39,19 +39,33 @@
   .primaire {
     --bg: linear-gradient(-50deg, #d1c3e2 0%, #9356DC 100%);
     margin-right: var(--hm);
-    animation: attract-primaire var(--animation);
+    -webkit-animation: attract-primaire var(--animation);
+            animation: attract-primaire var(--animation);
     
   }
   .secondaire{
     --bg: linear-gradient(-50deg, #f3cbe8 0%, #FF79DA 100%);
     margin-right: var(--hm);
-    animation: attract-secondaire var(--animation);
+    -webkit-animation: attract-secondaire var(--animation);
+            animation: attract-secondaire var(--animation);
 
+  }   
+  
+  @-webkit-keyframes attract-primaire {
+    to {
+      transform: translateX(calc(var(--sz) + calc(var(--hm) / 4)));
+    }
   }   
   
   @keyframes attract-primaire {
     to {
       transform: translateX(calc(var(--sz) + calc(var(--hm) / 4)));
+    }
+  }
+  
+  @-webkit-keyframes attract-secondaire {
+    to {
+      transform: translateX(calc(var(--sz) * -1 - calc(var(--hm) / 4)));
     }
   }
   
@@ -97,8 +111,6 @@
     align-items:center;
     font-size: 1.2rem;
     margin: 0 -0.5% 0 -0.5%;
-    background: -moz-linear-gradient(bottom, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
-    background: -webkit-linear-gradient(top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
     background: linear-gradient(to top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
 }
 
@@ -201,9 +213,10 @@ h2.visibility
 }
 .restaurants__liste__image {
     border-radius: 1rem 1rem 0 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 12rem;
-    width: 39rem;
+    width: 100%;
     margin-top: 1rem;
     box-shadow: none; 
        
@@ -212,7 +225,8 @@ h2.visibility
     max-width: 100%;
     max-height: 30rem;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .restaurants__liste__footer{   
@@ -245,7 +259,6 @@ h2.visibility
       left: 33rem;
       background-color: #99e2d0;
       color: #1b6150;
-      -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease;
       }
 
@@ -314,30 +327,29 @@ h2.visibility
 }
 .global{
     display: flex;
-    margin-left: 9.5rem;
-    width: 81rem;
+    margin-left: 9.6%;
+    width: 82%;
     
 }
 .restaurants__liste__menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80rem;
-    margin-left: 9.5rem;
-    margin-top: -3.1rem;
+    width: 80%;
+    margin-left: 9.6%;
+    margin-top: -6.6%;
     height: 4.6rem;
     position: absolute;
-    padding: 0.5rem;    
+    padding: 1%;    
     background-color: #f3f3f3;
-    -webkit-transition: opacity .5s ease;
     transition: opacity .5s ease;
     border-radius: 2rem 2rem 0 0;
 }
-.restaurants__sousmenu {	
-	padding-left: 1rem;
-	background-color: #f3f3f3;
-	height: auto;
-    width: 26rem;
+.restaurants__sousmenu {    
+    padding-left: 1rem;
+    background-color: #f3f3f3;
+    height: auto;
+    width: 100%;
     
 }
 .menu{
@@ -361,14 +373,13 @@ h2.visibility
     flex-wrap: wrap;
     justify-content: space-around;
     background: white;    
-    margin-top: 2rem;    
+    margin-top: 11%;    
     margin-bottom: 1rem;
     border-radius: 0.82rem;
     -moz-border-radius: 0.82rem;
-    -webkit-border-radius: 0.82rem;
-    -webkit-box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
+    -webkit-border-radius: 0.82rem; 
     box-shadow: 0rem 0rem 1rem -0.5rem rgba(0,0,0,0.99); 
- 	
+    
 }
 .choix__titre{
     width: 85%;
@@ -385,33 +396,30 @@ h2.visibility
     @-webkit-keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
     }
     }
     @keyframes fadeInUp {
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     }
     100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
     }
-    } 
-  
- 
+    }  
   
 .choix__titre{
    width: 85%;
    transition: .5s linear;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
    
 }
 
@@ -449,7 +457,7 @@ h2.visibility
 .order{
     background-color: #f3f3f3;
     margin-left: 9.6%;
-    margin-right: 8.5%;
+    margin-right: 8.4%;
     height: 6rem;
     
 
