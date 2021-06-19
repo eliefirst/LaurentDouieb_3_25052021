@@ -7,22 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/5337207aaf.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" media="only screen and (min-width: 360px) and (max-width: 413px)" href="./css/style-medium.css">
-        <link rel="stylesheet" media="only screen and (min-width: 414px) and (max-width: 666px)" href="./css/style-medium1.css">
-
+        <link rel="stylesheet" href="./css/mobilefirst.css">
+        
         <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
         
         <script type="text/javascript">
             $(document).ready(function(){
                $(".loadingspinner").fadeOut(5000,function(){
-                $("#content").fadeIn(1000);
+                $("#wrapper").fadeIn(1000);
             });
             })
 
-
-
         </script>
+        
 
         <title>Accueil - ohmyfood</title><meta name="title" content="Accueil - ohmyfood">
     </head>
@@ -33,7 +30,7 @@
             <div class="block primaire"></div>
             <div class="block secondaire"></div>       
             </div>
-      <div id=content>
+      <div id=wrapper>
             <header class="header">
              
              
@@ -41,7 +38,9 @@
 
             </header>     
 
-            <main class="main">
+            
+            <content class="content">
+
 
                 <section class="localisation">
                   <div class="backgroundloc">
@@ -80,21 +79,20 @@
                         <span class="text">Dégustez au restaurant</span> 
                       </div> 
                        
-                    </div> 
+                    </div>
                     <h2 class="visibility">ohmyfood</h2>
                </section>
 
-               <section class="restau" id="restau">
-
+               <section class="restau" id="restau">             
+                         <div class="restaurants__titre">
+                           <h2> Restaurants</h2>
+                         </div>
                 <div class="flex">
-
-                        <h2 class="restaurants__titre">Restaurants</h2>
-
                          
                     <div class="restaurants__global"> 
                           <article>
                            <div class="boite">
-                            <a class="restaurants__card" href="la-palette-du-gout.html"> 
+                             <a class="restaurants__card" href="la-palette-du-gout.html"> 
                               <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la-palette-du-gout" class="restaurants__liste__image">
 
                               <div class="legende">Nouveau</div>
@@ -110,7 +108,7 @@
                                     </div> 
                             
                               </div>
-                            </a>
+                             </a>
                            </div>
                             
                           </article>
@@ -163,7 +161,7 @@
 
                           <article>
 
-                            <div class="boite"> 
+                            <div class="boite">
                              <a class="restaurants__card" href="le-delice-des-sens.html"> 
                                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-delice-des-sens" class="restaurants__liste__image">  
                                 
@@ -188,10 +186,10 @@
 
                </section>
 
-            </main>
-          <footer class="footer"> 
+            </content>
+             <footer class="footer"> 
 
-              <div class="footer-wrap">
+                <div class="footer-wrap">
 
                     <span class="footer__logo">ohmyfood</span>
 
@@ -210,9 +208,9 @@
                         </li> 
                     </ul> 
 
-            </div>
+                </div>
 
-          </footer> 
+            </footer> 
       </div>  
     </body>
 
