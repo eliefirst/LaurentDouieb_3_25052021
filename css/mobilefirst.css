@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
  * {
-    font-family : 'Roboto', sans-serif;        
+    font-family : 'Roboto', sans-serif;
+
  }
  .loadingspinner{
     transition-property: all;
     transition-duration: 300ms; 
     transition-timing-function: ease-in;
-    transition-delay: 1s;  
+    transition-delay: 1s; 
   }
-  
+    
   .loadingspinner {
     height: 100vh;
     display: flex;
@@ -27,7 +28,7 @@
     width: var(--sz);
     background-image: var(--bg);
     border-radius: 50%;
-    transform: translateX(var(--tX));
+    /*transform: translateX(var(--tX, 0));*/
     mix-blend-mode: lighten;
   }
   
@@ -72,11 +73,6 @@
 #wrapper{
     display: none;
 }
-
-
-
-
-
  
 #wrapper, .wrapper__restau{
 	width:100%;  
@@ -218,7 +214,7 @@ h2.visibility
    margin-left: 1rem;
 }
 .restaurants__liste__soustitre{
-  font-weight: 370;
+  font-weight: 300;
 }
 .restaurants__liste__image {
     border-radius: 1rem 1rem 0 0;
@@ -534,6 +530,7 @@ h2.visibility
       margin-top: 5%;
     
 }
+}
 /* Medium devices (tablets, 740px and up)*/
 
 @media (min-width: 736px) {
@@ -630,7 +627,7 @@ h2.visibility
 
 @media (min-width: 1200px) {
     .restaurants__liste__image {
-       width: 35rem;
+       width: 30rem;
     }
     .legende{
       left: 82%;
@@ -676,6 +673,6 @@ h2.visibility
     /*secondaires 1920px*/
     .restaurants__liste__menu {
       /*height: 34vh;*/
-      width: 97.1vw;
+      width: 97.1vh;
     }
 }
