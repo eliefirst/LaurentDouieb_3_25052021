@@ -1,4 +1,4 @@
-// Variables
+/* Variables*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"); 
 @import "./utils/variables";
 @import "./base/base";
@@ -37,14 +37,14 @@
   }
   
   .primaire {
-    --bg: linear-gradient(-50deg, #d1c3e2 0%, #9356DC 100%);
+    --bg: #{linear-gradient(-50deg, #d1c3e2 0%, #9356DC 100%)};
     margin-right: var(--hm);
     -webkit-animation: attract-primaire var(--animation);
             animation: attract-primaire var(--animation);
     
   }
   .secondaire{
-    --bg: linear-gradient(-50deg, #f3cbe8 0%, #FF79DA 100%);
+    --bg: #{linear-gradient(-50deg, #f3cbe8 0%, #FF79DA 100%)};
     margin-right: var(--hm);
     -webkit-animation: attract-secondaire var(--animation);
             animation: attract-secondaire var(--animation);
@@ -78,7 +78,7 @@
     display: none;
 }
 #wrapper{
-	margin: 0 auto; 
+    margin: 0 auto; 
     background-color: $color-white;
 
 }
@@ -88,7 +88,7 @@
 }
 
 .header {
-	position: relative;
+    position: relative;
     padding: 0.2rem;
 }
 .header__logo{
@@ -97,7 +97,7 @@
     text-decoration: none;
     text-align: center;
     display: block;
-    font-size: 2em;
+    font-size: nth($font-size, 4);
     font-weight: normal;
     font-family: "Shrikhand", "cursive";
 }
@@ -106,7 +106,7 @@
     display: flex;
     justify-content:center;
     align-items:center;
-    font-size: 1rem;
+    font-size: nth($font-size, 1);
     margin: 0 -0.5% 0 -0.5%;
     background: linear-gradient(to top, rgb(243,243,243) 0%, rgb(243,243,243) 96%, rgb(207,207,207) 100%);
 }
@@ -124,7 +124,7 @@
 .recherche__button{
    text-decoration: none;
    color:rgb(255, 255, 255);
-   font-size: 1.1rem;
+   font-size: nth($font-size, 2);
    padding: 0.85rem 1.5rem;
    background-image: linear-gradient(0deg, rgba(144, 79, 223, 0.9), rgba(255,121,218,0.9));
    border-radius: 6rem;
@@ -288,12 +288,12 @@ h2.visibility
     color: $color-white;
     font-family: "Shrikhand", "cursive";
     margin: 0;
-    font-size: 1.2rem;
+    font-size: nth($font-size, 3);
 }
 .footer__link {
     color: $color-white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: nth($font-size, 1);
 }
 .footer__link:hover {
     text-decoration: underline;
@@ -325,8 +325,8 @@ h2.visibility
     width: 2rem;
     top: 50%;
     transform: translateY(-28%);
-    font-size: 1.2rem;
-    color: black;
+    font-size: nth($font-size, 3);
+    color: $color-black;
 }
 .restaurants__imgmenu {
     max-width: 100%;
@@ -474,7 +474,7 @@ h2.visibility
     color: $color-tertiere;
     height: 1.6rem;
     width: 1.6rem;
-    background-color: white;
+    background-color: $color-white;
     display: flex;
     align-items: center;
     justify-content: center;
